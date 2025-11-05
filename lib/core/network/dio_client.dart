@@ -12,7 +12,7 @@ class DioClient {
     dio = Dio(
       BaseOptions(
         baseUrl:
-            "https://1265e306-d34f-40b0-ac2f-ea2b2c6c569d-00-1t7ipffkmtc6f.sisko.replit.dev",
+            "https://local-node-server",
         headers: {'Content-Type': 'application/json'},
       ),
     );
