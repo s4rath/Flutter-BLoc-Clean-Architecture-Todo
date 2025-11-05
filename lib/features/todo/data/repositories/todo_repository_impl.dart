@@ -1,4 +1,3 @@
-// todo_repository_impl.dart
 import '../../domain/entities/todo.dart';
 import '../../domain/repositories/todo_repository.dart';
 import '../datasources/todo_data_source.dart';
@@ -13,7 +12,6 @@ class TodoRepositoryImpl implements TodoRepository {
   @override
   Future<List<Todo>> getTodos() async {
     try {
-      // Try to get from API
       final todos = await remoteDataSource.getTodos();
       // Cache them locally
       // await localDataSource.cacheTodos(todos);

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../domain/entities/todo.dart';
 import '../cubit/todo_cubit.dart';
 import '../cubit/todo_state.dart';
@@ -36,7 +35,6 @@ class TodoListPage extends StatelessWidget {
                   onTap: ()=> _showAddTodoDialog(context, todo: todo),
                   child: TodoItem(todo: todo,),
                 );
-                // TodoItem(todo: todo);
               },
             );
           } else if (state is TodoError) {
@@ -53,7 +51,3 @@ class TodoListPage extends StatelessWidget {
   }
 }
 
-
-
-// add_todo_page.dart
-// A separate page or dialog for creating new todos

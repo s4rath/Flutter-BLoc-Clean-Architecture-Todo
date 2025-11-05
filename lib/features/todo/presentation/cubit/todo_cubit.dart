@@ -1,5 +1,4 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../domain/entities/todo.dart';
 import '../../domain/usecases/todo_use_case.dart';
 import 'todo_state.dart';
